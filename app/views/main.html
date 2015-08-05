@@ -1,0 +1,52 @@
+<div class="jumbotron">
+  <h1>'Alloha, 'Allohe!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div class="row marketing">
+
+  <h4>HTML5 Boilerplate</h4>
+  <p>
+    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+  </p>
+
+  <h4>Angular</h4>
+  <p>
+    AngularJS is a toolset for building the framework most suited to your application development.
+  </p>
+
+  <h4>Karma</h4>
+  <p>Spectacular Test Runner for JavaScript.</p>
+
+
+  <form ng-submit="addMyInputAwesomeThings()">
+  Type Title here : <input type="text" ng-model="title">
+  Type Content here : <textarea ng-model="content"></textarea>
+    <input type="submit">
+  </form>
+  
+
+  <!--<ul ng-repeat="thing in awesomeThings track by $index">
+      <li>{{ thing }}</li>
+  </ul>-->
+  <div ng-show="errorString">
+      {{ errorString }}
+  </div>
+
+  <div ng-hide"errorString">
+
+    List All Data Array : {{awesomeThings}}
+    Filter : <input ng-model="searchTerm"><br>
+    <ul ng-repeat="thing in awesomeThings | filter:{title:searchTerm}">
+      <li>Title {{$index}} : {{ thing }}</li>
+    </ul>
+
+  </div>
+
+
+
+</div>
